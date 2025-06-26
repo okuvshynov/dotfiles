@@ -35,3 +35,6 @@ Current exploration:
  - how should PR review work
  - how do we make interaction between 'planning agent' (for example, deep research from any major provider) bidirectional and more efficient? How can we make our code accesible by deep research tool, and how do we make deep research output available for agent? Should there be an MCP server exposing 'Deep Research'?
  - how can I utilize local models better? I can run them all the time without incurring API calls/token limits.
+
+Current notes:
+ - /up2speed is too specific - it reads recent commits since it diverged from main, which is not nesessarily the right way. We might read a few last commits anyway.
