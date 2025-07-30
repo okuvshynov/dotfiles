@@ -1,0 +1,40 @@
+syntax on
+set re=0
+set autoindent
+set hlsearch
+set ignorecase
+set incsearch
+set nocompatible
+set number
+set ruler
+set shiftwidth=4
+set showmatch
+set smartcase
+set tabstop=4
+set expandtab
+set t_Co=256
+set background=light
+"set updatetime=100
+
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.fzf
+
+call vundle#begin()
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'thinca/vim-themis'
+
+call vundle#end()
+
+filetype indent plugin on
+colorscheme papercolor
+
+let NERDTreeShowHidden=1
+
+map <C-\> :NERDTreeToggle<CR>
+nmap <F7> :History<CR>
