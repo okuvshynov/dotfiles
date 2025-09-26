@@ -3,6 +3,6 @@ Review the recent commit messages in the current branch to get up to speed on wh
 Read:
 - commit messages (most important)
 - lists of files changed
-- if any documentation file (*.md) has changed - if yes, read that file.
+- if any documentation markdown file changed, read those files.
 
 Summarize your understanding.
