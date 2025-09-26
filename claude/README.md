@@ -29,7 +29,8 @@ Multiple ways to provide instructions to the assistant:
  - Feature-specific todo/architecture/implementation plan referenced to the assistant. The plan itself might be created manually or built with other AI, say, deep research. Being feature specific, it needs to become part of commit messages and/or persistent documentation (CLAUDE.md, etc)
  - Longer-term architecture/planning documents. These needs to be kept up to date.
 
-Current exploration:
+Next steps:
+ - how to be more explicit about 'partial TDD' idea?
  - automatic `/up2speed` when switching branches
  - automatic `/hk` on commit. Seems too slow/expensive for tokens in context as we prefer to `/commit` tiny changes
  - automatic `/hk` on X% of context window left.
