@@ -29,7 +29,7 @@ else
 fi
 
 echo "Downloading vimrc..."
-curl -fsSL https://raw.githubusercontent.com/oleksandr/dotfiles/main/vim/vimrc -o ~/.vimrc
+curl -fsSL https://raw.githubusercontent.com/okuvshynov/dotfiles/main/vim/vimrc -o ~/.vimrc
 
 echo "Done! Vim is now configured with NERDTree, fzf, and gutentags."
 echo "Use Ctrl+\ to toggle NERDTree and F7 for fzf history."
