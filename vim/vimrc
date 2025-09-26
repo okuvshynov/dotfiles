@@ -14,25 +14,10 @@ set tabstop=4
 set expandtab
 set t_Co=256
 set background=light
-"set updatetime=100
-
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-set rtp+=~/.fzf
-
-call vundle#begin()
-
-Plugin 'scrooloose/nerdtree'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'thinca/vim-themis'
-
-call vundle#end()
 
 filetype indent plugin on
-colorscheme papercolor
+
+set rtp+=~/.fzf
 
 let NERDTreeShowHidden=1
 
