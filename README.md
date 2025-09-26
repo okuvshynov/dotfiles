@@ -5,5 +5,5 @@
 ### Vim Configuration
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/okuvshynov/dotfiles/main/install-vim.sh | bash
+curl -fsSL -H "Accept: application/vnd.github.v3.raw" https://api.github.com/repos/okuvshynov/dotfiles/contents/install-vim.sh | bash
 ```
