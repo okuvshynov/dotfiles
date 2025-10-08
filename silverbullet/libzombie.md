@@ -1,4 +1,21 @@
 ```space-lua
+-- 
+-- One of the utilities/widgets to help maintain the space clean.
+-- The goal is to identify the zombie pages - ones I've created and
+-- didn't read in a while. This is to capture temporary notes which
+-- would not bring much value but just clutter the space.
+-- In case some note is 'allowed' to be there and rarely read,
+-- we can add #evergreen tag, which would skip reporing of that
+-- page as zombie. 
+-- On every page open we add the timestamp to the frontmatter.
+-- It might seem like further cluttering the content, but for some
+-- cases it's actually great as it is stored right in the md file
+-- and can be processed by external tools as well.
+-- The widget is showing a list of zombie pages which can be configured 
+-- for duration (how long after last read to consider zombie) and number
+-- of items
+--
+
 event.listen {
   name = "editor:pageLoaded",
   run = function(pageName, previousPage)
