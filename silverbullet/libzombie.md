@@ -1,19 +1,19 @@
 ```space-lua
--- 
--- One of the utilities/widgets to help maintain the space clean.
--- The goal is to identify the zombie pages - ones I've created and
--- didn't read in a while. This is to capture temporary notes which
--- would not bring much value but just clutter the space.
--- In case some note is 'allowed' to be there and rarely read,
--- we can add #evergreen tag, which would skip reporing of that
--- page as zombie. 
--- On every page open we add the timestamp to the frontmatter.
--- It might seem like further cluttering the content, but for some
--- cases it's actually great as it is stored right in the md file
+--
+-- One of the utilities/widgets to help keep the space clean.
+-- The goal is to identify zombie pages - ones I've created and
+-- haven't read in a while. This is to capture temporary notes that
+-- would not bring much value and only clutter the space.
+-- If a note is 'allowed' to be there and is rarely read,
+-- we can add the #evergreen tag, which will skip reporting that
+-- page as a zombie.
+-- On every page open, we add a timestamp to the frontmatter.
+-- This might seem like further clutter, but for some cases it's
+-- actually beneficial, as it is stored directly in the .md file
 -- and can be processed by external tools as well.
--- The widget is showing a list of zombie pages which can be configured 
--- for duration (how long after last read to consider zombie) and number
--- of items
+-- The widget shows a list of zombie pages that can be configured
+-- for duration threshold (how long after the last read to consider
+-- a page a zombie) and number of items.
 --
 
 event.listen {
