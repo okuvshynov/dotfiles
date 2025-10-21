@@ -98,7 +98,7 @@ end
 -- Helper function to parse ISO 8601 timestamp to Unix seconds
 function parseISOTimestamp(isoStr)
   -- Parse ISO format: 2025-01-15T10:30:45Z
-  local pattern = "!(%d+)-(%d+)-(%d+)T(%d+):(%d+):(%d+)Z?"
+  local pattern = "!(%d+)%-(%d+)%-(%d+)T(%d+):(%d+):(%d+)Z?"
   local year, month, day, hour, min, sec = string.match(isoStr, pattern)
 
   if not year then
