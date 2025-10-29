@@ -70,8 +70,23 @@ function bioExportByRule(rule_name, content)
   end
   
   -- Write content via stdin
-  local writeResult = shell.run("tee", {exportDir .. "/" .. rule_name}, content)
+  -- TODO: we need to check if content has changed.
+  local fileName = exportDir .. "/" .. rule_name
+  local fileNameTmp = fileName .. ".tmp"
   
+  local writeResult = shell.run("tee", {fileNameTmp}, content)
+  if writeResult.code ~= 0 then
+    editor.flashNotification("bio: failed to write to temporary file - " .. writeResult.stderr)
+    return
+  end
+
+  local cmpResult = shell.run("cmp", {fileName, fileNameTmp})
+  if cmpResult.code == 0 then
+    editor.flashNotification("bio: file not changed, skip writing")
+    return
+  end
+
+  local writeResult = shell.run("tee", {fileName}, content)
   if writeResult.code == 0 then
     editor.flashNotification("bio: export " .. rule_name .. " [" ..  string.len(content) .."]")
   else
