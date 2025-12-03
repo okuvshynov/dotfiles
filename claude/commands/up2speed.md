@@ -10,3 +10,5 @@ Summarize your understanding.
 If you are on main/master branch, consider getting recent 5-10 commits first, and adjust if needed.
 
 If you are not on main/master branch, get all the commits after branch diverged from main
+
+Take into account not staged/not committed changes.
