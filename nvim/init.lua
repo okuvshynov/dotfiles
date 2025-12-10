@@ -13,6 +13,7 @@ vim.opt.number = true
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
+vim.o.background = 'light'
 
 -- Leader key (set before loading plugins)
 vim.g.mapleader = " "
