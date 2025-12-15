@@ -10,6 +10,14 @@
 
 This creates a symlink from `~/.config/nvim` to the dotfiles repo, so any changes you make are automatically tracked. Plugins will auto-install via lazy.nvim on first launch.
 
+### Claude Code Commands
+
+```bash
+./setup-claude.sh
+```
+
+This creates a symlink from `~/.claude/commands` to the dotfiles repo. Custom slash commands (`/up2speed`, `/feature`, etc.) are then available in all Claude Code sessions.
+
 ### Vim Configuration
 
 ```bash
