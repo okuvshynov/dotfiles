@@ -2,6 +2,14 @@
 
 ## Quick Install
 
+### Neovim Configuration
+
+```bash
+./setup-nvim.sh
+```
+
+This creates a symlink from `~/.config/nvim` to the dotfiles repo, so any changes you make are automatically tracked. Plugins will auto-install via lazy.nvim on first launch.
+
 ### Vim Configuration
 
 ```bash

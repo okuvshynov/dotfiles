@@ -8,7 +8,7 @@ return {
     require("telescope").setup({
       extensions = {
         file_browser = {
-          depth = 3,
+          depth = 1,
           grouped = true,  -- directories first, then files
         }
       }
