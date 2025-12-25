@@ -4,6 +4,7 @@ Read:
 - commit messages (most important)
 - lists of files changed
 - if any documentation markdown file changed, read those files.
+- current CLAUDE.md and README.md
 
 Summarize your understanding.
 
